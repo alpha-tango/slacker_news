@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker News</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="title-bar">
+      <ul>
+        <li id="y">Y</li>
+        <li id="title">Hacker News</li>
+        <li>new | </li>
+        <li>comments | </li>
+        <li>show | </li>
+        <li>ask | </li>
+        <li>jobs | </li>
+        <li> submit </li>
+      </ul>
+    </div>
+    <div class="search-container">
+      <ul>
+        <li>
+          <a href="https://www.firebase.com/blog/2013-08-15-firebase-leaves-beta-today.html"> Firebase Leaves Beta Today </a>
+          <span class="dom"> (firebase.com)</span>
+          <p> 63 points by lyime 56 minutes ago | <a href="comments.html"> 17 comments </p>
+        </li>
+      </ul>
+      <form action="/comments" method="post">
+        <textarea type="text" id="comment" name="comment" ></textarea>
+        <p></p>
+        <input type="submit" id="submit" value="add comment"></input>
+      </form>
+    </div>
