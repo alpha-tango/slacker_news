@@ -1,0 +1,12 @@
+
+<h1> OMG SUBMIT NEW ARTICLE </h1>
+
+<form action="/newarticle" method="post">
+  <label for="title">Title:</label>
+  <input type="text" name="title" id="title" value="<%=@invalid_hash[:title]%>"/>
+  <label for="url">URL:</label>
+  <input type="text" name="url" id="url" value="<%=@invalid_hash[:url]%>"/>
+  <label for="description">Article Description:</label>
+  <textarea type="text" name="description" id="description"/><%=@invalid_hash[:description]%></textarea>
+  <input type="submit" value="submit article">
+</form>

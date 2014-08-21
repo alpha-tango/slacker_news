@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker News</title>
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    <div class="title-bar">
+      <ul>
+        <li id="y">Y</li>
+        <a href="/"><li id="title">Hacker News</li></a>
+       <a href="/newarticle" ><li>new | </li></a>
+        <li>comments | </li>
+        <li>show | </li>
+        <li>ask | </li>
+        <li>jobs | </li>
+        <li> submit </li>
+      </ul>
+    </div>
+
+  <article> <%= yield %> </article>
+  <% if flash.any? %>
+<div class="alert alert-info">
+<%= flash[:notice] %>
+</div>
+<% end %>
+
+ <footer>
+<ul>
+<li><a href="/">Guidelines</a></li>
+<li><a href="/">FAQ</a></li>
+<li><a href="/">Lists</a></li>
+<li><a href="/">Bookmarklet</a></li>
+<li><a href="/">DMCA</a></li>
+<li><a href="/">News News</a></li>
+<li><a href="/">Bugs and Feature Requests</a></li>
+<li><a href="/">Y Combinator</a></li>
+<li><a href="/">Apply</a></li>
+<li><a href="/">Library</a></li>
+<li><a href="/">Contact</a></li>
+</ul>
+<form>
+<input type="text">
+<input type="submit">
+</form>
+</footer>
+
+</body>
+

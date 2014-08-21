@@ -1,0 +1,15 @@
+
+<h1> All Articles </h1>
+
+    <div class="articles">
+      <ol>
+        <% @all_articles.reverse.each do |article| %>
+        <li>
+          <a target="_blank" href="/article/<%=article[:title]%>"> <%=article[:title] %> </a>
+          <span class="dom"><%= article[:url]%></span>
+          <p> <%=article[:description]%> </p>
+          <!-- <p> 63 points by lyime 56 minutes ago | <a href="comments.html"> 17 comments </p> -->
+        </li>
+        <%end%>
+      </ol>
+    </div>

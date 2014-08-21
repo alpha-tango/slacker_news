@@ -117,3 +117,28 @@ body {
   margin: 5px 25px;
   text-decoration: none;
 }
+
+/* Footer */
+footer {
+border-top: solid 2px #ff6600;
+font-size: .75em;
+text-align: center;
+padding-bottom: 20px;
+}
+footer ul {
+list-style: none;
+}
+footer ul li {
+display: inline-block;
+color: black;
+margin-right: 10px;
+}
+footer ul li a {
+text-decoration: none;
+color: black;
+border-right: solid 1px gray;
+padding-right: 15px;
+}
+footer ul li:last-child a{
+border: none;
+}
